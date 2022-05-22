@@ -49,7 +49,7 @@
 
         <!-- Page Content  -->
         <div id="content">
-                    <button type="button" id="sidebarCollapse" class="btn "><i class="fas fa-arrow-right" onclick="changeArrow(this)"></i></button>
+                    <button type="button" id="sidebarCollapse" class="btn "><i id="arrow" class="fas fa-arrow-right "></i></button>
         </div>
     </div>
     <div id="content2">
@@ -68,11 +68,9 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $('#sidebarCollapse').toggleClass('activo');
+                $('#arrow').toggleClass("fa-arrow-right fa-arrow-left")
             });
         });
-        function changeArrow(x) {
-            x.classList.toggle("fa-arrow-left");
-        }
     </script>
 </body>
 </html>
