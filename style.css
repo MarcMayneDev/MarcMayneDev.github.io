@@ -106,8 +106,6 @@ a[aria-expanded="true"] {
     position: fixed;
     z-index: 990;
     background-image: url('right-arrow.png');
-    width: 10px;
-    height: 10px;
 }
 #sidebarCollapse.activo {
     margin-left: 250px;
@@ -163,7 +161,7 @@ a.article:hover {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
+    transition: all 0.1s;
     background-image: url(FrontDeveloper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
