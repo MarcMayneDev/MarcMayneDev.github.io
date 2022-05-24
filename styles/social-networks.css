@@ -1,0 +1,20 @@
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    padding: 8px;
+}
+.social-networks li {
+    list-style-type: none;
+}
+
+.social-networks li img {
+    width: 20px;
+    height: 20px;
+}
+.social-networks li img:hover {
+    width: 30px;
+    height: 30px;
+}

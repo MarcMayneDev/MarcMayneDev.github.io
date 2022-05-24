@@ -6,71 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/social-networks.css">
     <!-- Parallax JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar" class="active">
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+    <section id="about">
+        <div class="container">
+            <div class="message">
+                <h1>Hola, soy Marc Martínez Mayné soy un Web Developer nacido en Cataluña</h1>
+                <p>Soy un estudiante de desarrollo web con mucho interes en el desarrollo Frontend. Siempre he sido una persona que piensa con un gran interes en la informatica y la traducción.  Siempre me ha gustado tener mis proyectos con la opción de traducirse para poder llegar a la maxima cantidad de personas posible.</p>
+                <div>
+                    <ul class="social-networks">
+                        <li class="github">
+                            <a href="https://github.com/MarcMayneDev" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png" title="Check my Github">
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/marc-martinez-mayne/" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" title="Contact me on LinkedIn">
+                            </a>
+                        </li>
+                        <li class="email">
+                            <a href="mailto:marcmartinez2001@gmail.com?subject=Oferta laboral" title="Send me an email">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <ul class="list-unstyled components">
-                <p>MarcMayneDev</p>
-                <li class="active">
-                    <a href="#homeSubmenu" class="">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" class="">Pages</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-                    <button type="button" id="sidebarCollapse" class="btn "><i id="arrow" class="fas fa-arrow-right "></i></button>
+            <img id="retrato" src="marc.jpg" alt="retrato marc">
         </div>
+    </section>
+
+    <section id="project_1">
+        <div class="container">
+            <div class="project">
+                <img id="project1"  src="proyecto1.png" alt="proyecto juego">
+            </div>
+            <div class="content">
+                <h2>Learn The Language</h2>
+                <p>Este proyecto </p>
+                <a class="togame" href="game/juego.html">Try it</a>
+                <div class="languages">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="Html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" alt="JavaScript">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project_2">
+        <div class="container">
+            <div class="content">
+                <h2>Broggi</h2>
+                <p>This is a little description of what is the project about</p>
+                <h1 class="mobile-only">MMMMM</h1>
+                <img id="project2" class="mobile-only" src="proyecto2.jpg" alt="proyecto Broggi">
+                <a class="togithub" target="_blank" href="https://github.com/MarcMayneDev/Broggi">Get a look at Github</a>
+                <div class="languages">
+                    <img src="https://bit.ly/3GdnbRa" alt="Laravel">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/vuejs-1175052.png" alt="Vue">
+                </div>
+            </div>
+            <div class="project">
+                <img id="project2"  class="desktop-only src="proyecto2.jpg" alt="proyecto Broggi">
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <ul class="social-networks">
+            <li class="github">
+                <a href="https://github.com/MarcMayneDev" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" title="Check my Github">
+                </a>
+            </li>
+            <li class="linkedin">
+                <a href="https://www.linkedin.com/in/marc-martinez-mayne/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" title="Contact me on LinkedIn">
+                </a>
+            </li>
+            <li class="email">
+                <a href="mailto:marcmartinez2001@gmail.com?subject=Oferta laboral" title="Send me an email">
+                    <img src="https://svgsilh.com/svg_v2/147563.svg">
+                </a>
+            </li>
+        </ul>
     </div>
-    <div id="content2">
-
-    </div>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#sidebarCollapse').toggleClass('activo');
-                $('#arrow').toggleClass("fa-arrow-right fa-arrow-left")
-            });
-        });
-    </script>
 </body>
 </html>

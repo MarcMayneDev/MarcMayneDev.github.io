@@ -1,0 +1,176 @@
+/*
+    pallete 
+    background-color: rgb(27, 32, 33);
+    background-color: rgb(81, 81, 61);
+    background-color: rgb(166, 168, 103);
+    background-color: rgb(227, 220, 149);
+    background-color: rgb(227, 220, 194);
+*/
+
+html {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#introduction {
+    padding: 20px;
+    transition: all 0.1s;
+    background-color: rgb(81, 81, 61);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#retrato{
+    max-height: 500px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+section#about .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    background-color: rgb(27, 32, 33);
+    color: rgb(227, 220, 194);
+}
+section#about .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    padding: 48px;
+    text-align: center;
+}
+section#about .message h1{
+    font-size: 40px;
+}
+#project1{
+    width: 720px;
+    max-width: 100%;
+}
+#project2{
+    width: 720px;
+    max-width: 100%;
+}
+section#about img {
+    flex: 1;
+}
+section#project_1 .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    background-color: rgb(166, 168, 103);
+    color: rgb(27, 32, 33);
+}
+section#project_1 .project{
+    flex: 1;
+
+}
+section#project_1 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    padding: 24px;
+}
+section#project_1 .content .languages{
+    display: flex;
+    flex-direction: row;
+}
+section#project_1 .content .languages img{
+    width: 50px;
+    max-width: 100%;
+    padding-top: 16px;
+}
+section#project_1 div.content .togame{
+    width:  50px;
+    background-color: red;
+    color: azure;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+section#project_2 .container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    background-color: rgb(227, 220, 194);
+    color: rgb(27, 32, 33);
+}
+section#project_2 .project{
+    flex: 1;
+}
+section#project_2 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+}
+section#project_2 .content .languages{
+    display: flex;
+    flex-direction: row;
+}
+section#project_2 .content .languages img{
+    width: 100px;
+    max-width: 100%;
+    padding: 16px 0px 0px 16px;
+    flex: 1
+}
+section#project_2 div.content .togithub{
+    width:  150px;
+    background-color: red;
+    color: azure;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+@media screen and (min-width : 906px){
+    .desktop-only {
+        visibility:visible;
+    }
+    .mobile-only {
+        visibility:hidden;
+    }
+}
+
+@media screen and (max-width : 906px){
+    .desktop-only {
+        visibility:hidden;
+    }
+    .mobile-only {
+        visibility:visible;
+    }
+}
