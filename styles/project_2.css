@@ -7,7 +7,7 @@ section#project_2 .container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #FFF68F;
+    background-color: rgb(227, 220, 194);
     color: rgb(27, 32, 33);
 }
 section#project_2 .project{
