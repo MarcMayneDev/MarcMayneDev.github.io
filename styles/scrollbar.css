@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(27,32,33,1);
+}
+::-webkit-scrollbar-track { 
+    background-color: rgba(227,220,194,0.9);; 
+    border-radius: 8px; 
+} 

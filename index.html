@@ -9,7 +9,11 @@
     <title>Portfolio</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/project_1.css">
+    <link rel="stylesheet" href="styles/project_2.css">
     <link rel="stylesheet" href="styles/social-networks.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
     <!-- Parallax JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
@@ -17,8 +21,9 @@
     <section id="about">
         <div class="container">
             <div class="message">
-                <h1>Hola, soy Marc Martínez Mayné soy un Web Developer nacido en Cataluña</h1>
-                <p>Soy un estudiante de desarrollo web con mucho interes en el desarrollo Frontend. Siempre he sido una persona que piensa con un gran interes en la informatica y la traducción.  Siempre me ha gustado tener mis proyectos con la opción de traducirse para poder llegar a la maxima cantidad de personas posible.</p>
+                <h2 class="hola">Hola, soy Marc Martínez Mayné</h2><h2 class="webdeveloper">Web Developer nacido en Cataluña</h2>
+                <p>Soy un estudiante de desarrollo web con interes en el desarrollo Front End. Siempre he sido una persona que piensa con un gran interes en la informatica y la traducción.  Siempre me ha gustado tener mis proyectos con la opción de traducirse para poder llegar a la maxima cantidad de personas posible.</p>
+                <img class="mobile-only" id="retrato" src="marc.jpg" alt="retrato marc">
                 <div>
                     <ul class="social-networks">
                         <li class="github">
@@ -39,46 +44,49 @@
                     </ul>
                 </div>
             </div>
-            <img id="retrato" src="marc.jpg" alt="retrato marc">
+            <img class="desktop-only" id="retrato" src="marc.jpg" alt="retrato marc">
         </div>
     </section>
 
     <section id="project_1">
         <div class="container">
             <div class="project">
-                <img id="project1"  src="proyecto1.png" alt="proyecto juego">
+                <img class="desktop-only" id="project1"  src="proyecto1.png" alt="proyecto juego">
             </div>
             <div class="content">
                 <h2>Learn The Language</h2>
-                <p>Este proyecto </p>
-                <a class="togame" href="game/juego.html">Try it</a>
+                <img class="mobile-only" id="project1"  src="proyecto1.png" alt="proyecto juego">
+                <p>En este proyecto teniamos que crear un juego web modificando el DOM mediante JavaScript.<br>La tematica eran las puertas abiertas del centro de estudios y debiamos enseñar lo que se podia aprender y/o como se aprendia en el centro.</p>
                 <div class="languages">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="Html">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" alt="JavaScript">
+                    <div class="html">HTML</div>
+                    <div class="javascript">JavaScript</div>
+                    <div class="css">CSS</div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="project_2">
-        <div class="container">
-            <div class="content">
-                <h2>Broggi</h2>
-                <p>This is a little description of what is the project about</p>
-                <h1 class="mobile-only">MMMMM</h1>
-                <img id="project2" class="mobile-only" src="proyecto2.jpg" alt="proyecto Broggi">
-                <a class="togithub" target="_blank" href="https://github.com/MarcMayneDev/Broggi">Get a look at Github</a>
-                <div class="languages">
-                    <img src="https://bit.ly/3GdnbRa" alt="Laravel">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/vuejs-1175052.png" alt="Vue">
-                </div>
-            </div>
-            <div class="project">
-                <img id="project2"  class="desktop-only src="proyecto2.jpg" alt="proyecto Broggi">
+                <a class="togame" href="game/juego.html">Pruebalo</a>
             </div>
         </div>
     </section>
 
-    <div>
+    <section id="project_2">
+        <div class="container">
+            <div class="content">
+                <h2>Broggi</h2>
+                <img id="project2" class="mobile-only" src="proyecto2.jpg" alt="proyecto Broggi">
+                <p>Para este proyecto teniamos que crear una aplicación web para el instituto Moises Broggi que les permitiese simular las llamadas de emergencias.</p>
+                <div class="languages">
+                    <div class="laravel">Laravel</div>
+                    <div class="vue">Vue.js</div>
+                    <div class="css">CSS</div>
+                </div>
+                <a class="togithub" target="_blank" href="https://github.com/MarcMayneDev/Broggi">Ver en Github</a>
+            </div>
+            <div class="project">
+                <img id="project2"  class="desktop-only" src="proyecto2.jpg" alt="proyecto Broggi">
+            </div>
+        </div>
+    </section>
+
+    <!-- <div>
         <ul class="social-networks">
             <li class="github">
                 <a href="https://github.com/MarcMayneDev" target="_blank">
@@ -96,6 +104,6 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 </body>
 </html>

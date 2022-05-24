@@ -1,0 +1,63 @@
+#project2{
+    max-width: 100%;
+}
+
+section#project_2 .container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFF68F;
+    color: rgb(27, 32, 33);
+}
+section#project_2 .project{
+    flex: 2;
+}
+section#project_2 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    text-align: center;
+    padding: 24px;
+}
+section#project_2 .content .languages{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+section#project_2 .content .languages div{
+    width: fit-content;
+    background: #ccc;
+    border: 1px solid #000;
+    max-width: 100%;
+    padding: 4px 8px;
+    border-radius: 24px;
+    font-size: 12px;
+}
+section#project_2 div.content .togithub{
+    width:  fit-content;
+    background-color: #5C278F;
+    color: #FFF;
+    border: 1px solid #51513d;
+    border-radius: 3px;
+    padding: 8px;
+    transition: all 0.5s;
+}
+section#project_2 div.content .togithub:hover{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+@media screen and (min-width : 906px){
+    section#project_2 .project{
+        flex: 2;
+    }
+}
+
+@media screen and (max-width : 906px){
+    section#project_2 .project{
+        flex: 0;
+    }
+}

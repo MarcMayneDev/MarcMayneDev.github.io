@@ -11,10 +11,10 @@
 }
 
 .social-networks li img {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
 }
-.social-networks li img:hover {
+/* .social-networks li img:hover {
     width: 30px;
     height: 30px;
-}
+} */
