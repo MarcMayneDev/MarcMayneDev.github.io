@@ -48,6 +48,10 @@ h2{
     font-size: 32px;
     font-family: 'Merriweather', serif;
 }
+h1{
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+}
 
 
 @media screen and (min-width : 906px){
