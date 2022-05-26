@@ -11,7 +11,7 @@ section#about .message {
     flex-direction: column;
     align-items: center;
     flex: 2;
-    padding: 48px;
+    padding: 32px;
     text-align: center;
 }
 
@@ -27,4 +27,13 @@ h2.webdeveloper{
     font-size: 24px;
     margin: 0px;
 }
+section#about h2{
+    margin: 0px;
+}
 
+@media screen and (max-width : 400px){
+    h2.webdeveloper{
+        visibility:hidden;
+        display:none
+    }
+}
