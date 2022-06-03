@@ -7,8 +7,8 @@ section#project_1 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(166, 168, 103);
-    color: rgb(27, 32, 33);
+    background-color: var(--terciario);
+    color: var(--primario);
 }
 
 
@@ -37,7 +37,7 @@ section#project_1 .content .languages div{
 }
 section#project_1 div.content .togame{
     width:  fit-content;
-    background-color: #41258F;
+    background-color: var(--action);
     color: #FFF;
     text-align: center;
     border: 1px solid #51513d;
@@ -56,7 +56,7 @@ section#project_1 div.content .togame:hover{
     }
     section#project_1 div.content .togame{
         width:  fit-content;
-        background-color: #5C278F;
+        background-color: var(--action);
         color: #FFF;
         text-align: center;
         border: 1px solid #51513d;

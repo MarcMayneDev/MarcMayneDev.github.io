@@ -7,8 +7,8 @@ section#project_2 .container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(227, 220, 194);
-    color: rgb(27, 32, 33);
+    background-color: var(--secundario);
+    color: var(--primario);
 }
 section#project_2 .project{
     flex: 2;
@@ -38,7 +38,7 @@ section#project_2 .content .languages div{
 }
 section#project_2 div.content .togithub{
     width:  fit-content;
-    background-color: #5C278F;
+    background-color: var(--action);
     color: #FFF;
     border: 1px solid #51513d;
     border-radius: 3px;

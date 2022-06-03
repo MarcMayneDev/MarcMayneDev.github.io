@@ -15,7 +15,11 @@ html {
 }
 
 *, *:before, *:after {
-    box-sizing: inherit
+    box-sizing: inherit;
+    --principal: #1b2021;
+    --secundario: #e3dcc2;
+    --terciario: #a6a867;
+    --action: #5C278F;
 }
 
 a,

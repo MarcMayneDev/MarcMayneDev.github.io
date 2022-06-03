@@ -3,8 +3,8 @@ section#about .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(27, 32, 33);
-    color: rgb(227, 220, 194);
+    background-color: var(--principal);
+    color: var(--secundario);
 }
 section#about .message {
     display: flex;
