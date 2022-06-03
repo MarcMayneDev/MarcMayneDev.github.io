@@ -18,10 +18,12 @@ section#about .message {
 #retrato{
     max-width: 100%;
     flex: 1;
+    border-radius: 46%;
 }
 #retratomobile{
     max-width: 100%;
     flex: 1;
+    border-radius: 39%;
 }
 h2.webdeveloper{
     font-size: 24px;
