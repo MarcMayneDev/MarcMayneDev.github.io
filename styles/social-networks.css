@@ -15,7 +15,7 @@
     width: 32px;
     height: 32px;
 }
-/* .social-networks li img:hover {
-    width: 30px;
-    height: 30px;
-} */
+.social-networks li img:hover {
+    transform: scale(1.15) perspective(1px);
+    
+}
